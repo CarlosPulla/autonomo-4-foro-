@@ -1,0 +1,13 @@
+# Lista de estudiantes (cada uno es un diccionario)
+estudiantes = [
+    {"nombre": "Carlos", "calificacion": 75, "semestre": "primer semestre"},
+    {"nombre": "Ana", "calificacion": 55, "semestre": "primer semestre"}
+]
+
+# Evaluar  estudiantes
+for estudiante in estudiantes:
+    print(f"Nombre: {estudiante['nombre']}, Semestre: {estudiante['semestre']}")
+    if estudiante["calificacion"] >= 60:
+        print(f"{estudiante['nombre']} ha aprobado.")
+    else:
+        print(f"{estudiante['nombre']} no ha aprobado.")
